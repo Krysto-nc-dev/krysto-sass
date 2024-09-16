@@ -5,31 +5,24 @@ type LogoSvgProps = ComponentPropsWithoutRef<"svg"> & { size?: number };
 export const LogoSvg = ({ size = 32, ...props }: LogoSvgProps) => {
   return (
     <svg
+      xmlns="http://www.w3.org/2000/svg"
       width={size}
       height={size}
-      viewBox="0 0 120 120"
+      viewBox="0 0 24 24"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="lucide lucide-recycle"
       {...props}
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M112.448 91.7993L80.0827 80.3244L66.4131 11.9822L112.448 91.7993ZM39.9175 80.3244L7.55176 91.7993L53.5872 11.9822L39.9175 80.3244ZM73.7228 78.6076H46.2774L60.0001 9.99994L73.7228 78.6076Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M73.7225 78.6076H46.2771L59.9998 9.99994L73.7225 78.6076Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M45.7581 84.5074H74.2419L111.032 97.5576L82.9734 110H37.0265L8.96753 97.5576L45.7581 84.5074Z"
-        fill="currentColor"
-      />
+      <path d="M7 19H4.815a1.83 1.83 0 0 1-1.57-.881 1.785 1.785 0 0 1-.004-1.784L7.196 9.5" />
+      <path d="M11 19h8.203a1.83 1.83 0 0 0 1.556-.89 1.784 1.784 0 0 0 0-1.775l-1.226-2.12" />
+      <path d="m14 16-3 3 3 3" />
+      <path d="M8.293 13.596 7.196 9.5 3.1 10.598" />
+      <path d="m9.344 5.811 1.093-1.892A1.83 1.83 0 0 1 11.985 3a1.784 1.784 0 0 1 1.546.888l3.943 6.843" />
+      <path d="m13.378 9.633 4.096 1.098 1.097-4.096" />
     </svg>
   );
 };
